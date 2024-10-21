@@ -1,1 +1,4 @@
-# -softuni-digital-timer
+# SoftBreak - SoftUni Timer
+
+## Usage
+// TODO
