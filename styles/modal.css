@@ -69,7 +69,6 @@ form.time-form button {
 
 .modal .close-button:hover, form.time-form button:hover {
     cursor: pointer;
-    color: #3F4D5A;
 }
 
 form.time-form input {
