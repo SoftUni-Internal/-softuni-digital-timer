@@ -20,9 +20,10 @@ function setTheTimer(e) {
 
     const suggestedPick = e.suggestedPick ? formatTimeContent(e.suggestedPick) : false;
     const timeFromForm = formatTimeContent(minutesVal);
+    const secondsValue = e.suggestedPick ? 0 : secondsVal;
 
     minutes().textContent = suggestedPick || timeFromForm;
-    seconds().textContent = formatTimeContent(secondsVal);
+    seconds().textContent = formatTimeContent(secondsValue);
 
     toggleModal();
     
