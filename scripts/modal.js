@@ -1,5 +1,6 @@
 import { elements } from './elements.js';
 import { formatTimeContent } from './utils.js';
+import { isStartedYet, controlCenter } from './controls.js';
 
 const { closeButton, form, modalOverlay, modal, suggestions } = elements.modal;
 let { time, minutes, seconds } = elements.time;
@@ -24,6 +25,8 @@ function setTheTimer(e) {
     seconds().textContent = formatTimeContent(secondsVal);
 
     toggleModal();
+    
+    if(!isStartedYet()) { controlCenter(); }
 }
 
 function toggleModal() {
