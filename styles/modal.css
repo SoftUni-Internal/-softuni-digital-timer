@@ -1,8 +1,8 @@
 @import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
 
 :root {
-    --main-blue: #234465;
-    --main-orange: #FFA000;
+    --main-blue: #3F4D5A;
+    --main-orange: #FC4C50;
   }
 
 .modal {
@@ -48,7 +48,7 @@
 
 .modal .close-button {
   border: none;
-  background: #FFA000;
+  background: #FC4C50;
   color: white;
   padding: 0.3em 0.6em;
   margin: 0.3em;
@@ -59,7 +59,7 @@
 
 form.time-form button {
   border: none;
-  background: #FFA000;
+  background: #FC4C50;
   color: white;
   padding: 0.3em 3em;
   font-size: 1.3em;
@@ -69,7 +69,7 @@ form.time-form button {
 
 .modal .close-button:hover, form.time-form button:hover {
     cursor: pointer;
-    color: #234465;
+    color: #3F4D5A;
 }
 
 form.time-form input {
