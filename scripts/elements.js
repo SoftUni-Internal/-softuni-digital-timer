@@ -20,9 +20,5 @@ export const elements = {
         closeButton: () => document.querySelector('#close-button'),
         form: () => document.querySelector('form.time-form'),
         suggestions: () => document.querySelector('.suggestions')
-    },
-    audio: {
-        audio: () => document.querySelector('audio'),
-        muteButton: () => document.querySelector('header')
     }
 };

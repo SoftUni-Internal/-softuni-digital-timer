@@ -51,15 +51,6 @@ export function formatTimeContent(value) {
     return Number(value).toString().padStart(2, 0);
 };
 
-export function manageAudio() {
-    const isPaused = elements.audio.audio().paused;
-    if (isPaused) {
-        elements.audio.audio().play();
-    } else {
-        elements.audio.audio().pause();
-    }
-};
-
 export function getMinutesToSet() {
     const currentMinutes = new Date().getMinutes();
     const currentHalf = Number(currentMinutes) >= 30 ? 60 : 30;
@@ -70,7 +61,6 @@ export function setupEvents() {
     elements.time.minutes().addEventListener('wheel', timeHandlers.minutes);
     elements.time.seconds().addEventListener('wheel', timeHandlers.seconds);
     elements.info.timerState().addEventListener('click', controlCenter);
-    elements.audio.muteButton().addEventListener('click', manageAudio);
 };
 
 export function appendPartnersElements() {
