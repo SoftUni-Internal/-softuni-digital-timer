@@ -42,7 +42,6 @@ export function manageQueryString(search) {
             elements.time.minutes().textContent = formatTimeContent(getMinutesToSet());
         }
 
-        if (on === "true") { elements.info.timerState().click(); }
         if (mod === "false") { elements.modal.closeButton().click(); }
     }
 };
@@ -60,7 +59,6 @@ export function getMinutesToSet() {
 export function setupEvents() {
     elements.time.minutes().addEventListener('wheel', timeHandlers.minutes);
     elements.time.seconds().addEventListener('wheel', timeHandlers.seconds);
-    elements.info.timerState().addEventListener('click', controlCenter);
 };
 
 export function appendPartnersElements() {

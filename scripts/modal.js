@@ -1,6 +1,5 @@
 import { elements } from './elements.js';
 import { formatTimeContent } from './utils.js';
-import { isStartedYet } from './controls.js';
 
 const { closeButton, form, modalOverlay, modal, suggestions } = elements.modal;
 let { time, minutes, seconds } = elements.time;
@@ -10,17 +9,6 @@ export function setupModal() {
     time().addEventListener("click", toggleModal);
     form().addEventListener('submit', setTheTimer);
     suggestions().addEventListener('click', pickSuggestedTime);
-};
-
-export function toggleTimerState(timerStateEl, isStarted) {
-    timerStateEl.classList = [];
-    if (isStarted) {
-        timerStateEl.textContent = "[ON]";
-        timerStateEl.classList.toggle('timer-on');
-    } else {
-        timerStateEl.textContent = "[OFF]";
-        timerStateEl.classList.toggle('timer-off');
-    }
 };
 
 function setTheTimer(e) {
@@ -36,8 +24,6 @@ function setTheTimer(e) {
     seconds().textContent = formatTimeContent(secondsVal);
 
     toggleModal();
-
-    if(!isStartedYet()) { elements.info.timerState().click(); }
 }
 
 function toggleModal() {

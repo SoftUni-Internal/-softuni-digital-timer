@@ -11,9 +11,6 @@ export const elements = {
         partnersWrapper: () => document.querySelector('#partners'),
         partners: () => document.querySelectorAll('div.partner')
     },
-    info: {
-        timerState: () => document.querySelector('.info p:nth-child(2)')
-    },
     modal: {
         modal: () => document.querySelector('#modal'),
         modalOverlay: () => document.querySelector('#modal-overlay'),

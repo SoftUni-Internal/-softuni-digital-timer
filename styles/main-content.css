@@ -27,26 +27,3 @@
 .time .m:hover, .s:hover {
     color: #ffa000;
 }
-
-.time-container .info {
-    width: 24em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.time-container .info p {
-    text-align: center;
-    font-size: 2em;
-}
-
-.info .timer-button {
-    color: #ffa000;
-}
-
-.info .timer-on {
-    color: darkgreen;
-}
-
-.info .timer-off {
-    color: darkred;
-}
