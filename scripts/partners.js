@@ -6,7 +6,7 @@ export const partners = [
     { src: "./public/partners/draft-kings.png", name: "Draft Kings" },
     { src: "./public/partners/indeavr.png", name: "Indeavr" },
     { src: "./public/partners/phar-vision.png", name: "Phar Vision" },
-    { src: "./public/partners/postbank.png", name: "Postbank" },
+    { src: "./public/partners/postbank.jpg", name: "Postbank" },
     { src: "./public/partners/smart-it.png", name: "SmartIT" },
     { src: "./public/partners/superhosting.png", name: "SuperHosting" }
 ];
