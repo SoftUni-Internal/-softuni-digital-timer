@@ -42,6 +42,7 @@ export function manageQueryString(search) {
             elements.time.minutes().textContent = formatTimeContent(getMinutesToSet());
         }
 
+        if (on === "true") { controlCenter(); }
         if (mod === "false") { elements.modal.closeButton().click(); }
     }
 };
