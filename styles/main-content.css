@@ -10,10 +10,6 @@
     margin: 0 auto;
 }
 
-.time-container:hover {
-    cursor: pointer;
-}
-
 .time-container .time {
     display: flex;
     justify-content: center;
@@ -22,6 +18,7 @@
 
 .time-container .time:hover {
     border-bottom: 0.15rem solid #3F4D5A;
+    cursor: pointer;
 }
 
 .time .m:hover, .s:hover {

@@ -33,6 +33,7 @@ function setTheTimer(e) {
 function toggleModal() {
     modal().classList.toggle("closed");
     modalOverlay().classList.toggle("closed");
+    controlCenter();
 }
 
 function pickSuggestedTime(e) {

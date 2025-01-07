@@ -1,5 +1,4 @@
 import { animationFrame } from './animations.js';
-import { elements } from './elements.js';
 
 let isStarted = false;
 
